@@ -3,7 +3,6 @@
   --error-color: crimson;
   --success-color: green;
   --dark-color: #000;
-
 }
 
 * {
@@ -102,21 +101,19 @@ body {
   margin-bottom: 3rem;
 }
 
-.form-control.success input { 
+.input-group.success input {
   border-bottom: 2px solid var(--success-color);
 }
 
-.form-control.error input {
+.input-group.error input {
   border-bottom: 1px solid var(--error-color);
 }
 
-.form-control small {
+
+.input-group small {
   color: var(--error-color);
   visibility: hidden;
 }
-
-
-
 
 .submit-btn {
   display: block;
@@ -136,7 +133,6 @@ body {
 
 .forgot-pw {
   color: var(--light-color);
-  
 }
 
 #forgot-pw {
