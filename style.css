@@ -1,5 +1,9 @@
 :root {
   --light-color: #fff;
+  --error-color: crimson;
+  --success-color: green;
+  --dark-color: #000;
+
 }
 
 * {
@@ -27,7 +31,7 @@ body {
   width: 100%;
   max-width: 380px;
   padding: 80px 40px 40px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(17, 17, 17, 0.822);
   border-radius: 5px;
   color: rgb(194, 189, 189);
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
@@ -48,10 +52,10 @@ body {
 }
 .form img {
   position: absolute;
-  top: -50px;
+  top: -30px;
   left: calc(50% - 50px);
   width: 100px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.336);
   border-radius: 50%;
 }
 
@@ -70,7 +74,6 @@ body {
   padding: 10px 0;
   font-size: 1rem;
   letter-spacing: 1px;
-  margin-bottom: 50px;
   border: none;
   border-bottom: 1px solid var(--light-color);
   outline: none;
@@ -79,6 +82,7 @@ body {
 }
 .form .input-group label {
   position: absolute;
+  margin-bottom: 50px;
   top: 0;
   left: 0;
   padding: 10px 0;
@@ -89,10 +93,30 @@ body {
 
 .form .input-group input:focus + label,
 .form .input-group input:valid + label {
-  transform: translateY(-18px);
+  transform: translateY(-20px);
   color: var(--light-color);
   font-size: 0.8rem;
 }
+
+.form .input-group {
+  margin-bottom: 3rem;
+}
+
+.form-control.success input { 
+  border-bottom: 2px solid var(--success-color);
+}
+
+.form-control.error input {
+  border-bottom: 1px solid var(--error-color);
+}
+
+.form-control small {
+  color: var(--error-color);
+  visibility: hidden;
+}
+
+
+
 
 .submit-btn {
   display: block;
@@ -100,13 +124,18 @@ body {
   color: var(--light-color);
   border: none;
   outline: none;
-  background: black;
+  background: var(--dark-color);
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.forgot-pw {
+  color: var(--light-color);
+  
 }
 
 #forgot-pw {

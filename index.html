@@ -12,21 +12,25 @@
       <form action="" class="form" id="form">
         <img src="img/avatar1.png" alt="Image Header" />
         <h2>Register With Us</h2>
-        <div class="input-group">
+        <div class="input-group form-control success">
           <input type="text" name="username" id="username" required />
           <label for="username">Username</label>
+          <small>Error Message</small>
         </div>
-        <div class="input-group">
+        <div class="input-group form-control error">
           <input type="text" name="email" id="email" required />
           <label for="email">Email</label>
+          <small>Error Message</small>
         </div>
-        <div class="input-group">
+        <div class="input-group form-control">
           <input type="password" name="password" id="password" required />
           <label for="password">Username</label>
+          <small>Error Message</small>
         </div>
-        <div class="input-group">
+        <div class="input-group form-control">
           <input type="password" name="username" id="password2" required />
           <label for="password2">Confirm Username</label>
+          <small>Error Message</small>
         </div>
         <input type="submit" value="login" class="submit-btn" />
         <a href="#forgot-pw" class="forgot-pw">Forgot Password</a>
