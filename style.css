@@ -129,8 +129,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 0;
   cursor: pointer;
+  margin-bottom: 1rem;
 }
 
 .forgot-pw {
